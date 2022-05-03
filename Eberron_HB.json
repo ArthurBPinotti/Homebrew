@@ -1,0 +1,305 @@
+{
+	"siteVersion": "1.154.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "EberronHB",
+				"abbreviation": "EHB",
+				"full": "Eberron HB",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1651609795,
+		"dateLastModified": 1651609795
+	},
+	"monster": [
+		{
+			"name": "The Lord of Blades",
+			"shortName": true,
+			"isNamedCreature": true,
+			"source": "EberronHB",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"warforged"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 195,
+				"formula": "23d8 + 92"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 18,
+			"int": 19,
+			"wis": 17,
+			"cha": 18,
+			"save": {
+				"str": "+11",
+				"con": "+10",
+				"int": "+10",
+				"wis": "+9"
+			},
+			"skill": {
+				"arcana": "+10",
+				"athletics": "+11",
+				"history": "+10",
+				"perception": "+9"
+			},
+			"passive": 19,
+			"resist": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish"
+			],
+			"cr": "18",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Lord of Blades is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He has the following artificer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt} (see \"Actions\" below)",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell expeditious retreat}",
+								"{@spell sanctuary}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell heat metal}",
+								"{@spell scorching ray}",
+								"{@spell see invisibility}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell fly}",
+								"{@spell haste}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell freedom of movement}",
+								"{@spell Mordenkainen's faithful hound}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}",
+								"{@spell wall of force}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Adamantine Plating",
+					"entries": [
+						"Any critical hit against the Lord of Blades becomes a normal hit."
+					]
+				},
+				{
+					"name": "Bladed Armor",
+					"entries": [
+						"A creature that grapples the Lord of Blades or is {@condition grappled} by him takes 13 ({@damage 3d8}) slashing damage. A creature takes 13 ({@damage 3d8}) slashing damage if it starts its turn grappling or being {@condition grappled} by the Lord of Blades."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the Lord of Blades moves at least 10 feet straight toward a target and then hits it with his adamantine sixblade on the same turn, the target takes an extra 11 ({@damage 2d10}) slashing damage. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Warforged Resilience",
+					"entries": [
+						"The Lord of Blades has advantage on saving throws against being {@condition poisoned}, is immune to disease, and magic can't put him to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Lord of Blades makes three attacks: two with his adamantine sixblade and one with his bladed wings."
+					]
+				},
+				{
+					"name": "Adamantine Sixblade",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d10 + 5}) slashing damage plus 7 ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Bladed Wings",
+					"entries": [
+						"{@atk mw,rw} {@hit 11} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Fire Bolt (Cantrip)",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}22 ({@damage 4d10}) fire damage."
+					]
+				},
+				{
+					"name": "Forge Fury Recharge(5-6)",
+					"entries": [
+						"Recharge(5-6) The Lord of Blade exhales fire from its chest in a 15-foot cone. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 28 ({@damage 8d6}) damage fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Lord of Blades makes one weapon attack."
+					]
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"The Lord of Blades casts one of his cantrips."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"The Lord of Blades casts a spell of 2nd level or lower from his spell list that takes 1 action to cast."
+					]
+				},
+				{
+					"name": "Blade Dash (Costs 3 Actions)",
+					"entries": [
+						"The Lord of Blades moves up to his speed without provoking opportunity attacks, then makes one attack with his adamantine sixblade. He can make one bladed wings attack against each creature he moves past."
+					]
+				}
+			],
+			"fluff": {
+				"name": "The Lord of Blades",
+				"source": "ERLW",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The Lord of Blades is a warforged warlord who has broken all ties with his former masters. He has established a nation for his people deep in the Mournland, centered in a great fortress where warforged from all over Khorvaire can come and feel a sense of belonging. No one knows what the Lord of Blades plans for his followers, but many fear that he intends to build a legion of warforged zealots, primed to march from the Mournland to unleash destruction on their former masters.",
+									"Some tales assert that the Lord of Blades led the warforged armies of Cyre in the Last War. Others cast him as a newer warforged, perhaps the last to come out of the Cannith creation forges before the Thronehold Accords led to their dismantling. One story claims the Lord of Blades caused the destruction of Cyre and warns that he plans to repeat the Day of Mourning in each of the remaining Five Nations. Whatever the truth, he has become a beacon for warforged everywhere.",
+									{
+										"type": "entries",
+										"name": "Warforged Nature",
+										"entries": [
+											"The Lord of Blades doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/ERLW/The Lord of Blades.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/ERLW/The Lord of Blades.png",
+			"traitTags": [
+				"Charge"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E"
+			],
+			"damageTags": [
+				"F",
+				"O",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"P",
+				"S",
+				"T"
+			],
+			"spellcastingTags": [
+				"CA"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
